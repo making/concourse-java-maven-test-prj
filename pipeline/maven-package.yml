@@ -5,13 +5,12 @@ image: docker:///maven#3.3.3
 inputs:
   - name: git-repo
 
-# outputs:
-#   - name: git-repo-out
-#     path: git-repo/target
+ outputs:
+   - name: target
 
 run:
   path: mkdir
-  args: ["-p", "git-repo/target/foo/bar"]
+  args: ["-p", "target/foo/bar"]
   # path: mvn
   # args: ["-f", "git-repo/pom.xml", "-DskipTests=true", "package"]
 
