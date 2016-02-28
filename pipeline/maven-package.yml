@@ -10,6 +10,8 @@ inputs:
 #     path: git-repo/target
 
 run:
-  path: mvn
-  args: ["-f", "git-repo/pom.xml", "-DskipTests=true", "package"]
+  path: mkdir
+  args: ["-p", "git-repo/target/foo/bar"]
+  # path: mvn
+  # args: ["-f", "git-repo/pom.xml", "-DskipTests=true", "package"]
 

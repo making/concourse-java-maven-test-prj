@@ -11,6 +11,6 @@ outputs:
     path: jar-file-renamed
 
 run:
-  path: ls
-  args: ["-laRh"]
+  path: find
+  args: ["."]
 
