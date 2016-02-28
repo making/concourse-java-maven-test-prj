@@ -7,7 +7,7 @@ inputs:
 
 outputs:
   - name: git-repo-out
-    path: git-repo
+    path: git-repo/target
 
 run:
   path: mvn

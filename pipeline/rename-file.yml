@@ -12,5 +12,5 @@ outputs:
 
 run:
   path: mv
-  args: ["git-repo-out/target/concourse-java-maven-test-prj-0.0.1-SNAPSHOT.jar", "jar-file-renamed/concourse-java-maven-test-prj-{{time}}.jar"]
+  args: ["git-repo-out/concourse-java-maven-test-prj-0.0.1-SNAPSHOT.jar", "jar-file-renamed/concourse-java-maven-test-prj-{{time}}.jar"]
 
