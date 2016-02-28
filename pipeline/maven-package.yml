@@ -5,9 +5,9 @@ image: docker:///maven#3.3.3
 inputs:
   - name: git-repo
 
-# outputs:
-#   - name: git-repo
-#     path: git-repo
+outputs:
+  - name: git-repo-out
+    path: git-repo
 
 run:
   path: mvn
