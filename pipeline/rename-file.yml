@@ -4,7 +4,7 @@ image: docker:///maven#3.3.3
 
 inputs:
   - name: time
-  - name: git-repo
+  - name: target
 
 outputs:
   - name: jar-file-renamed
