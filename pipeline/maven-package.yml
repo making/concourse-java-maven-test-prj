@@ -9,8 +9,7 @@ outputs:
   - name: target
 
 run:
-  path: mkdir
-  args: ["-p", "target/foo/bar"]
+  path: git-repo/pipeline/mvn.sh
   # path: mvn
   # args: ["-f", "git-repo/pom.xml", "-DskipTests=true", "package"]
 
