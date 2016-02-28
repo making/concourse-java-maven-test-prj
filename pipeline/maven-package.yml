@@ -5,9 +5,9 @@ image: docker:///maven#3.3.3
 inputs:
   - name: git-repo
 
-#outputs:
-#  - name: jar-file
-#    path: git-repo/target
+outputs:
+  - name: jar-file
+    path: git-repo/target
 
 run:
   path: mvn
