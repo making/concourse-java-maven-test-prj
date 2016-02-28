@@ -5,8 +5,8 @@ image: docker:///maven#3.3.3
 inputs:
   - name: git-repo
 
- outputs:
-   - name: target
+outputs:
+  - name: target
 
 run:
   path: mkdir
