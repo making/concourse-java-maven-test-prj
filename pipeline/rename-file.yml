@@ -4,13 +4,13 @@ image: docker:///maven#3.3.3
 
 inputs:
   - name: time
-  - name: git-repo-out
+  - name: git-repo
 
 outputs:
   - name: jar-file-renamed
     path: jar-file-renamed
 
 run:
-  path: mv
-  args: ["git-repo-out/concourse-java-maven-test-prj-0.0.1-SNAPSHOT.jar", "jar-file-renamed/concourse-java-maven-test-prj-{{time}}.jar"]
+  path: ls
+  args: ["-laRh"]
 
