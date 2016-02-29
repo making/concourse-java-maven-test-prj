@@ -9,7 +9,8 @@ outputs:
   - name: target
 
 run:
-  path: git-repo/pipeline/mvn.sh
-  # path: mvn
-  # args: ["-f", "git-repo/pom.xml", "-DskipTests=true", "package"]
+  path: bash
+  args:
+    - "-c"
+    - "mvn package -f git-repo/pom.xml -Dmaven.test.skip=true && mv git-repo/target ."
 
