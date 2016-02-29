@@ -1,0 +1,13 @@
+platform: linux
+
+image: docker:///maven#3.3.3
+
+inputs:
+  - name: git-repo
+
+run:
+  path: bash
+  args:
+    - "-c"
+    - "mvn test"
+
