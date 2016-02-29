@@ -9,5 +9,5 @@ run:
   path: bash
   args:
     - "-c"
-    - "mvn test -f git-repo"
+    - "mvn test -X -f git-repo/pom.xml"
 
