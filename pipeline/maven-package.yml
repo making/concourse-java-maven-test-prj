@@ -12,5 +12,5 @@ run:
   path: bash
   args:
     - "-c"
-    - "mvn package -f git-repo/pom.xml -Dmaven.test.skip=true && mv git-repo/target ."
+    - "mvn package -f git-repo/pom.xml -Dmaven.test.skip=true && mv git-repo/target/* ./target/"
 
