@@ -19,6 +19,7 @@ jobs:
         trigger: true
       - get: time
     - task: unit-test
+      privileged: true
       file: git-repo/pipeline/unit-test.yml
     - task: maven-package
       privileged: true
